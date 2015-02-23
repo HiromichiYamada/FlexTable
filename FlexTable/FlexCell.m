@@ -55,9 +55,18 @@ static FlexCell*	sizingCell	= nil;
 	
 	[sizingCell setupContentsForIndexPath:indexPath];
 	
-	CGSize	retSize	= [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-	NSLog(@"cell (%d:%d) %@", (int)indexPath.section, (int)indexPath.row, NSStringFromCGSize(retSize));
-	return retSize.height;
+	CGRect	cellFrame = sizingCell.frame;
+	cellFrame.size.width	= CGRectGetWidth(tableView.bounds);
+	sizingCell.frame	= cellFrame;
+	NSLog(@"- table bounds %@", NSStringFromCGRect(tableView.bounds));
+	NSLog(@"  sizingCell   %@", NSStringFromCGRect(sizingCell.frame));
+	
+	[sizingCell setNeedsLayout];
+	[sizingCell layoutIfNeeded];
+	
+	CGSize	fittingSize	= [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+	NSLog(@"  cell (%d:%d) %@", (int)indexPath.section, (int)indexPath.row, NSStringFromCGSize(fittingSize));
+	return fittingSize.height;
 }
 
 @end
