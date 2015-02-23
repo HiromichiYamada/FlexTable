@@ -13,14 +13,14 @@
 - (void)awakeFromNib {
 	// Initialization code
 	
-	self.autoresizingMask	= UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+//	self.autoresizingMask	= UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
 }
 
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
 
-    NSLog(@"%f",CGRectGetWidth(self.bodyLabel.bounds));
+//    NSLog(@"%f",CGRectGetWidth(self.bodyLabel.bounds));
 	self.bodyLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.bodyLabel.bounds);
 }
 
@@ -39,16 +39,15 @@
 	}
 	
 	self.bodyLabel.text	= bodyText;
-    [self layoutIfNeeded];
+	[self layoutIfNeeded];	// 重要.
 }
 
-static FlexCell*	sizingCell	= nil;
+static FlexCell*	sizingCell	= nil;	// サイズ計算用のセル.
 
 + (CGFloat) heightForTable:(UITableView*)tableView forIndexPath:(NSIndexPath*)indexPath
 {
 	if( sizingCell == nil ){
-		sizingCell	=
-		(FlexCell*)[tableView dequeueReusableCellWithIdentifier:@"FlexCell"];
+		sizingCell	= (FlexCell*)[tableView dequeueReusableCellWithIdentifier:@"FlexCell"];
 	}
 	
 //	CGRect	cellFrame = sizingCell.frame;

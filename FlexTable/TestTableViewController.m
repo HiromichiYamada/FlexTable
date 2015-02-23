@@ -26,7 +26,7 @@
 	
 	tableList.delegate	= self;
 	tableList.dataSource	= self;
-    [tableList layoutIfNeeded];
+	[tableList layoutIfNeeded];	// セルのサイズを決めるために必要.
 }
 
 - (void)didReceiveMemoryWarning {
