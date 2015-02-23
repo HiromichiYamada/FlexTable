@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
 	// Initialization code
+	
+//	self.autoresizingMask	= UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
 }
 
 - (void)layoutSubviews
@@ -47,9 +49,9 @@ static FlexCell*	sizingCell	= nil;
 		(FlexCell*)[tableView dequeueReusableCellWithIdentifier:@"FlexCell"];
 	}
 	
-	CGRect	cellFrame = sizingCell.frame;
-	cellFrame.size.width	= CGRectGetWidth(tableView.bounds);
-	sizingCell.frame	= cellFrame;
+//	CGRect	cellFrame = sizingCell.frame;
+//	cellFrame.size.width	= CGRectGetWidth(tableView.bounds);
+//	sizingCell.frame	= cellFrame;
 	
 	[sizingCell setupContentsForIndexPath:indexPath];
 	
