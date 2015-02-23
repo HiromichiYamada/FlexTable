@@ -20,7 +20,7 @@
 {
 	[super layoutSubviews];
 	
-	self.bodyLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.bodyLabel.bounds);
+//	self.bodyLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.bodyLabel.bounds);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
