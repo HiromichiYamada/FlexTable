@@ -11,13 +11,20 @@
 @implementation FlexCell
 
 - (void)awakeFromNib {
-    // Initialization code
+	// Initialization code
+}
+
+- (void)layoutSubviews
+{
+	[super layoutSubviews];
+	
+	self.bodyLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.bodyLabel.bounds);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+	[super setSelected:selected animated:animated];
+	
+	// Configure the view for the selected state
 }
 
 - (void) setupContentsForIndexPath:(NSIndexPath*)indexPath
@@ -31,5 +38,24 @@
 	self.bodyLabel.text	= bodyText;
 }
 
+static FlexCell*	sizingCell	= nil;
+
++ (CGFloat) heightForTable:(UITableView*)tableView forIndexPath:(NSIndexPath*)indexPath
+{
+	if( sizingCell == nil ){
+		sizingCell	=
+		(FlexCell*)[tableView dequeueReusableCellWithIdentifier:@"FlexCell"];
+	}
+	
+	CGRect	cellFrame = sizingCell.frame;
+	cellFrame.size.width	= CGRectGetWidth(tableView.bounds);
+	sizingCell.frame	= cellFrame;
+	
+	[sizingCell setupContentsForIndexPath:indexPath];
+	
+	CGSize	retSize	= [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+	NSLog(@"cell (%d:%d) %@", (int)indexPath.section, (int)indexPath.row, NSStringFromCGSize(retSize));
+	return retSize.height;
+}
 
 @end

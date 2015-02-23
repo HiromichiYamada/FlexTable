@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *bodyLabel;
 
++ (CGFloat) heightForTable:(UITableView*)tableView forIndexPath:(NSIndexPath*)indexPath;
+
 @end
 
 
