@@ -26,6 +26,7 @@
 	
 	tableList.delegate	= self;
 	tableList.dataSource	= self;
+    [tableList layoutIfNeeded];
 }
 
 - (void)didReceiveMemoryWarning {
