@@ -13,14 +13,15 @@
 - (void)awakeFromNib {
 	// Initialization code
 	
-//	self.autoresizingMask	= UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+	self.autoresizingMask	= UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
 }
 
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
-	
-//	self.bodyLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.bodyLabel.bounds);
+
+    NSLog(@"%f",CGRectGetWidth(self.bodyLabel.bounds));
+	self.bodyLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.bodyLabel.bounds);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -38,6 +39,7 @@
 	}
 	
 	self.bodyLabel.text	= bodyText;
+    [self layoutIfNeeded];
 }
 
 static FlexCell*	sizingCell	= nil;
@@ -60,9 +62,6 @@ static FlexCell*	sizingCell	= nil;
 	sizingCell.frame	= cellFrame;
 	NSLog(@"- table bounds %@", NSStringFromCGRect(tableView.bounds));
 	NSLog(@"  sizingCell   %@", NSStringFromCGRect(sizingCell.frame));
-	
-	[sizingCell setNeedsLayout];
-	[sizingCell layoutIfNeeded];
 	
 	CGSize	fittingSize	= [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
 	NSLog(@"  cell (%d:%d) %@", (int)indexPath.section, (int)indexPath.row, NSStringFromCGSize(fittingSize));
