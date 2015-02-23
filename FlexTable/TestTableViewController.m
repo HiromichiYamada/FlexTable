@@ -72,12 +72,10 @@
 	return [FlexCell heightForTable:tableView forIndexPath:indexPath];
 }
 
-/*
- // あってもなくても、変わらない？
+// 高さ計算の最適化.
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	return UITableViewAutomaticDimension;
 }
-*/
 
 @end
