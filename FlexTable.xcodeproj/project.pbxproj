@@ -14,6 +14,8 @@
 		25EED5EC1A986732005C3B0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EED5EB1A986732005C3B0E /* Images.xcassets */; };
 		25EED5EF1A986732005C3B0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25EED5ED1A986732005C3B0E /* LaunchScreen.xib */; };
 		25EED5FB1A986732005C3B0E /* FlexTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EED5FA1A986732005C3B0E /* FlexTableTests.m */; };
+		25EED6061A9867F8005C3B0E /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EED6051A9867F8005C3B0E /* TestTableViewController.m */; };
+		25EED6091A986819005C3B0E /* FlexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EED6081A986819005C3B0E /* FlexCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		25EED5F41A986732005C3B0E /* FlexTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EED5F91A986732005C3B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25EED5FA1A986732005C3B0E /* FlexTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexTableTests.m; sourceTree = "<group>"; };
+		25EED6041A9867F8005C3B0E /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		25EED6051A9867F8005C3B0E /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		25EED6071A986819005C3B0E /* FlexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexCell.h; sourceTree = "<group>"; };
+		25EED6081A986819005C3B0E /* FlexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				25EED5E51A986732005C3B0E /* ViewController.h */,
 				25EED5E61A986732005C3B0E /* ViewController.m */,
 				25EED5E81A986732005C3B0E /* Main.storyboard */,
+				25EED6041A9867F8005C3B0E /* TestTableViewController.h */,
+				25EED6051A9867F8005C3B0E /* TestTableViewController.m */,
+				25EED6071A986819005C3B0E /* FlexCell.h */,
+				25EED6081A986819005C3B0E /* FlexCell.m */,
 				25EED5EB1A986732005C3B0E /* Images.xcassets */,
 				25EED5ED1A986732005C3B0E /* LaunchScreen.xib */,
 				25EED5DE1A986732005C3B0E /* Supporting Files */,
@@ -221,7 +231,9 @@
 			files = (
 				25EED5E71A986732005C3B0E /* ViewController.m in Sources */,
 				25EED5E41A986732005C3B0E /* AppDelegate.m in Sources */,
+				25EED6091A986819005C3B0E /* FlexCell.m in Sources */,
 				25EED5E11A986732005C3B0E /* main.m in Sources */,
+				25EED6061A9867F8005C3B0E /* TestTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
