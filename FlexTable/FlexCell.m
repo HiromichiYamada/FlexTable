@@ -60,6 +60,8 @@ static FlexCell*	sizingCell	= nil;
 	CGRect	cellFrame = sizingCell.frame;
 	cellFrame.size.width	= CGRectGetWidth(tableView.bounds);
 	sizingCell.frame	= cellFrame;
+	[sizingCell setNeedsLayout];
+	[sizingCell layoutIfNeeded];
 	NSLog(@"- table bounds %@", NSStringFromCGRect(tableView.bounds));
 	NSLog(@"  sizingCell   %@", NSStringFromCGRect(sizingCell.frame));
 	
