@@ -32,7 +32,7 @@
 
 - (void) setupContentsForIndexPath:(NSIndexPath*)indexPath
 {
-	NSMutableString*	bodyText	= [NSMutableString string];
+	NSMutableString*	bodyText	= [NSMutableString stringWithFormat:@"(%ld:%ld) ", (long)indexPath.section, (long)indexPath.row];
 	int row = (int)indexPath.row;
 	for( int i=0; i<=row; i++ ){
 		[bodyText appendString:@"テスト文字列！"];
