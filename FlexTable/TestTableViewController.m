@@ -102,10 +102,12 @@
 	return [FlexCell heightForTable:tableView forIndexPath:indexPath];
 }
 
-// 高さ計算の最適化.
+/*
+// 高さ計算の最適化. .. これを有効にすると、Bottom Buttonの計算がきちんと行われない.
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	return UITableViewAutomaticDimension;
 }
+*/
 
 @end
