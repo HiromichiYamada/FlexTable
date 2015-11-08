@@ -13,20 +13,9 @@
 		25EED5EA1A986732005C3B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EED5E81A986732005C3B0E /* Main.storyboard */; };
 		25EED5EC1A986732005C3B0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EED5EB1A986732005C3B0E /* Images.xcassets */; };
 		25EED5EF1A986732005C3B0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25EED5ED1A986732005C3B0E /* LaunchScreen.xib */; };
-		25EED5FB1A986732005C3B0E /* FlexTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EED5FA1A986732005C3B0E /* FlexTableTests.m */; };
 		25EED6061A9867F8005C3B0E /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EED6051A9867F8005C3B0E /* TestTableViewController.m */; };
 		25EED6091A986819005C3B0E /* FlexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EED6081A986819005C3B0E /* FlexCell.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		25EED5F51A986732005C3B0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25EED5D31A986732005C3B0E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 25EED5DA1A986732005C3B0E;
-			remoteInfo = FlexTable;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		25EED5DB1A986732005C3B0E /* FlexTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +28,6 @@
 		25EED5E91A986732005C3B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25EED5EB1A986732005C3B0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		25EED5EE1A986732005C3B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		25EED5F41A986732005C3B0E /* FlexTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25EED5F91A986732005C3B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25EED5FA1A986732005C3B0E /* FlexTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexTableTests.m; sourceTree = "<group>"; };
 		25EED6041A9867F8005C3B0E /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
 		25EED6051A9867F8005C3B0E /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		25EED6071A986819005C3B0E /* FlexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexCell.h; sourceTree = "<group>"; };
@@ -56,13 +42,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25EED5F11A986732005C3B0E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				25EED5DD1A986732005C3B0E /* FlexTable */,
-				25EED5F71A986732005C3B0E /* FlexTableTests */,
 				25EED5DC1A986732005C3B0E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				25EED5DB1A986732005C3B0E /* FlexTable.app */,
-				25EED5F41A986732005C3B0E /* FlexTableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,23 +89,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		25EED5F71A986732005C3B0E /* FlexTableTests */ = {
-			isa = PBXGroup;
-			children = (
-				25EED5FA1A986732005C3B0E /* FlexTableTests.m */,
-				25EED5F81A986732005C3B0E /* Supporting Files */,
-			);
-			path = FlexTableTests;
-			sourceTree = "<group>";
-		};
-		25EED5F81A986732005C3B0E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				25EED5F91A986732005C3B0E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,39 +109,18 @@
 			productReference = 25EED5DB1A986732005C3B0E /* FlexTable.app */;
 			productType = "com.apple.product-type.application";
 		};
-		25EED5F31A986732005C3B0E /* FlexTableTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 25EED6011A986732005C3B0E /* Build configuration list for PBXNativeTarget "FlexTableTests" */;
-			buildPhases = (
-				25EED5F01A986732005C3B0E /* Sources */,
-				25EED5F11A986732005C3B0E /* Frameworks */,
-				25EED5F21A986732005C3B0E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				25EED5F61A986732005C3B0E /* PBXTargetDependency */,
-			);
-			name = FlexTableTests;
-			productName = FlexTableTests;
-			productReference = 25EED5F41A986732005C3B0E /* FlexTableTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		25EED5D31A986732005C3B0E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Torques Inc.";
 				TargetAttributes = {
 					25EED5DA1A986732005C3B0E = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					25EED5F31A986732005C3B0E = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 25EED5DA1A986732005C3B0E;
+						DevelopmentTeam = Z3FD554XT9;
 					};
 				};
 			};
@@ -199,7 +138,6 @@
 			projectRoot = "";
 			targets = (
 				25EED5DA1A986732005C3B0E /* FlexTable */,
-				25EED5F31A986732005C3B0E /* FlexTableTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,13 +150,6 @@
 				25EED5EA1A986732005C3B0E /* Main.storyboard in Resources */,
 				25EED5EF1A986732005C3B0E /* LaunchScreen.xib in Resources */,
 				25EED5EC1A986732005C3B0E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25EED5F21A986732005C3B0E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,23 +168,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25EED5F01A986732005C3B0E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				25EED5FB1A986732005C3B0E /* FlexTableTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		25EED5F61A986732005C3B0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 25EED5DA1A986732005C3B0E /* FlexTable */;
-			targetProxy = 25EED5F51A986732005C3B0E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		25EED5E81A986732005C3B0E /* Main.storyboard */ = {
@@ -295,6 +210,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -309,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -344,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -355,9 +271,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FlexTable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.torques.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -366,44 +285,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FlexTable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.torques.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		25EED6021A986732005C3B0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FlexTableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlexTable.app/FlexTable";
-			};
-			name = Debug;
-		};
-		25EED6031A986732005C3B0E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FlexTableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlexTable.app/FlexTable";
 			};
 			name = Release;
 		};
@@ -424,15 +312,6 @@
 			buildConfigurations = (
 				25EED5FF1A986732005C3B0E /* Debug */,
 				25EED6001A986732005C3B0E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		25EED6011A986732005C3B0E /* Build configuration list for PBXNativeTarget "FlexTableTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				25EED6021A986732005C3B0E /* Debug */,
-				25EED6031A986732005C3B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -70,8 +70,8 @@
 
 - (void) showBottom
 {
-	int bottomSection	= [tableList numberOfSections] - 1;
-	int	bottomRow			= [tableList numberOfRowsInSection:bottomSection] - 1;
+	int bottomSection	= (int)[tableList numberOfSections] - 1;
+	int	bottomRow			= (int)[tableList numberOfRowsInSection:bottomSection] - 1;
 	NSIndexPath	*indexPath	= [NSIndexPath indexPathForRow:bottomRow inSection:bottomSection];
 	
 	NSLog(@"show bottom [%d:%d]", bottomSection, bottomRow);
